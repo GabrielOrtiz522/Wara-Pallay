@@ -30,21 +30,21 @@ header{
     margin-top: 1%;
     margin-bottom: 1% ;
 }
-.logo{
-    width: 30%;
-    height: 30%;
-}
 .header__nav__enlace{
-    display: inline;
-    display: block;
-    display: inline-block; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.918);
-    border-style:ridge ;
+    border-style: solid;
     font-family: 'Work Sans', sans-serif;
     font-style: italic;
     font-size: large;
+    cursor: pointer;
+    border-radius: 50px;
+
 }
 header nav ul{
     display: flex;
@@ -90,17 +90,22 @@ header nav ul li{
     } 
 .imgWara{
     margin: 1%;
+    margin-bottom: 1%;
     justify-content: space-between;
     transform: translateX(20%);
 }
 .redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 5%;
     margin-bottom: 1%;
     max-height: 50%;
     text-align: center;
 }
-.facebook{
-    margin-right: 5%;
+.animate__animated.animate__pulse{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 footer{
     background-color: #f0aa40d3 ;
@@ -110,7 +115,9 @@ footer{
     margin-top: auto;
     margin-bottom: 1%;
 }
+
 /* ----- Html - Recetas ----- */
+
 .cuerpoTarjeta{
     width: 95%;
     margin: 1%;
