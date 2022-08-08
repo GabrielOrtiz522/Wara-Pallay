@@ -81,3 +81,56 @@ header nav ul li{
 	z-index: 2;
 	transition: .3s ease all;
 }
+footer{
+    background-color: #f0aa40d3 ;
+    border-style: ridge;
+    border-color: rgb(255, 176, 4);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 1%;
+}
+.titulosWara{
+    border-style: solid;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+}
+.cuadro{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.cuadroTexto h2{
+    font-weight: 900 ;
+}
+.cuadroTexto{
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-style: solid;
+    font-style: italic;
+    font-weight:bolder;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #ced4da;
+    line-height: 40px;
+}
+.carousel {
+    height: 100%;
+    width: 60%;
+    margin-top: 5%;
+    transform: translateX(35%);
+}
+.redesSociales{
+    display: flex;
+    justify-content: center;
+}
+.facebook{
+    margin-right: 3%;
+}
