@@ -29,42 +29,46 @@
                 <h1> Contacto</h1>
                 <img src="../img/placeholder.png" alt="ubicacion" width="50">
             </section>
-            <section> <!-- Inicio de la seccion de Mapa-->
+            <section class="mapa"> <!-- Inicio de la seccion de Mapa-->
                 <p>
                     En Córdoba, Argentina,se encuentra nuestro deposito en donde nos encargamos de la producción y atencion al cliente. <br>
                     En la ciudad hacemos entregas sin cargos, además hacemos envíos a todo el país. <br> 
                     Podes comunicarte via WhatsApp al número de telefono 351 - xxx - xxxx o contactate con nosotros a través del siguiente formulario
                 </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.0286959469132!2d-64.12802387063903!3d-31.438506799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd2176e5aa1f%3A0xa21144935854cb97!2zRWwgRm9ydMOtbiAyMTk4LCBDw7NyZG9iYQ!5e0!3m2!1sen!2sar!4v1657594569993!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapaDos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.0286959469132!2d-64.12802387063903!3d-31.438506799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd2176e5aa1f%3A0xa21144935854cb97!2zRWwgRm9ydMOtbiAyMTk4LCBDw7NyZG9iYQ!5e0!3m2!1sen!2sar!4v1657594569993!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section> <!-- Fin de seccion de Mapa-->
             <section class="tituloContacto"> <!--Incio de tabla de contacto-->
+            <img src="../img/clientetres.png" alt="cliente" width="50">
             <h2>¿Queres ser cliente?</h2>
+            </section>
+            <section class="subtituloContacto">
             <h4>Le solicitamos llene el formulario con sus datos y a la brevedad nos pondremos en contacto con usted.</h4>
             </section>
+            <section class="tablaDeContacto">
             <form action="">
                 <section class="empresaNombre">
                     <label for="empresa"></label>
-                    <input id ="empresa" name="nombre" type="text" placeholder="Nombre de Empresa/Negocio" minlength="3" maxlength="100" required autofocus autocomplete="off">
+                    <input id ="empresa" name="nombre" type="text" style="width: 1009px; height: 40px" placeholder="Nombre de Empresa/Negocio" minlength="3" maxlength="100" required autofocus autocomplete="off">
                 </section>
-                <section nombreApellido>
+                <section class="primerNombre">
                     <label for="nombre"></label>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Nombre" minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    <input id ="nombre" name="nombre" type="text" style="width: 500px; height: 40px" placeholder="Nombre" minlength="3" maxlength="50" required autofocus autocomplete="off">
                     <label for="apellido"></label>
-                    <input id ="apellido" name="nombre" type="text" placeholder="Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    <input id ="apellido" name="nombre" type="text" style="width: 500px; height: 40px" placeholder="Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off">
                 </section>
-                <section correoTelefono>
+                <section class="correoTelefono">
                     <label for="mail"></label>
-                    <input id="mail" name="mail" type="email" placeholder="Email" required>
+                    <input id="mail" name="mail" type="email" style="width: 500px; height: 40px" placeholder="Email" required>
                     <label for="telefono"></label>
-                    <input id ="telefono" name="nombre" type="tel" placeholder="Teléfono" minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    <input id ="telefono" name="nombre" type="tel" style="width: 500px; height: 40px" placeholder="Teléfono" minlength="3" maxlength="50" required autofocus autocomplete="off">
                 </section>
                 <section class="direccion">
                     <label for="direccion"></label>
-                    <input id ="direccion" name="nombre" type="text" placeholder="Direccion Comercial" minlength="3" maxlength="200" required autofocus autocomplete="off">
+                    <input id ="direccion" name="nombre" type="text" style="width: 1009px; height: 40px" placeholder="Direccion Comercial" minlength="3" maxlength="200" required autofocus autocomplete="off">
                 </section>
                 <section class="ubicacion">
-                    <label for="prov">Provincia</label>
-                        <select name="provincia" id="prov">
+                    <label for="prov"></label>
+                        <select name="provincia" id="prov" style="width: 500px; height: 40px">
                             <option value="Caba">Capital Federal</option>
                             <option value="Buenos Aires" selected>Bs. As.</option>
                             <option value="Catamarca">Catamarca</option>
@@ -91,12 +95,12 @@
                             <option value="Tucuman">Tucuman</option>
                         </select>
                     <label for="localidad"></label>
-                    <input id ="localidad" name="nombre" type="text" placeholder="Ciudad/Localidad" minlength="3" maxlength="200" required autofocus autocomplete="off">
+                    <input id ="localidad" name="nombre" type="text" style="width: 500px; height: 40px" placeholder="Ciudad/Localidad" minlength="3" maxlength="200" required autofocus autocomplete="off">
                 </section>
                 <section class="comentario">
                     <fieldset>
                         <legend></legend>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su comentario..."></textarea>
+                        <textarea name="comentario" id="comentario" style="width: 1012px;" cols="30" rows="10" placeholder="Ingrese su comentario..."></textarea>
                     </fieldset>
                 </section>   
                 <section class="enviar">
