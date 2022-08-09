@@ -142,16 +142,25 @@ footer{
 /* --- Recetas --- */
 .cuerpoTarjeta{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto auto;
     grid-row: auto auto auto;
     margin: 3%;
 
     border-style: solid;
     border-color: black;
 }
-
-.tarjeta img{
+.tarjeta{
+    display: flex;
     display: block;
-    margin: auto;
-    width: 70%;
+    flex-direction: column;
+    margin: 1%;
+    border-style: solid;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight:bolder;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ced4dac5;
+    font-size: 20px;
+    width: 90%;
 }
