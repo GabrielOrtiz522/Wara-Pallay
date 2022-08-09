@@ -89,6 +89,8 @@ footer{
     margin-top: auto;
     margin-bottom: 1%;
 }
+/* --- Index --- */
+
 .titulosWara{
     border-style: solid;
     text-align: center;
@@ -96,6 +98,7 @@ footer{
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
     padding: 1%;
 }
 .cuadro{
@@ -130,7 +133,25 @@ footer{
 .redesSociales{
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
 }
 .facebook{
     margin-right: 3%;
+}
+
+/* --- Recetas --- */
+.cuerpoTarjeta{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row: auto auto auto;
+    margin: 3%;
+
+    border-style: solid;
+    border-color: black;
+}
+
+.tarjeta img{
+    display: block;
+    margin: auto;
+    width: 70%;
 }
