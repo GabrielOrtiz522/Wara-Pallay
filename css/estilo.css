@@ -146,9 +146,6 @@ footer{
     grid-template-columns: auto auto auto;
     grid-row: auto auto auto;
     margin: 3%;
-
-    border-style: solid;
-    border-color: black;
 }
 .tarjeta{
     display: flex;
@@ -222,7 +219,6 @@ footer{
 }
 .tablaDeContacto{
     display: grid;
-    grid-template-rows: 20%;
     margin-left: 20%;
     margin-right: 20%;
     padding-top: 1%;
