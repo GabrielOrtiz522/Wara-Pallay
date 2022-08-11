@@ -46,8 +46,8 @@ header nav ul{
 	background: #F9FFED ;
 	color: black;
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 22px;
+	font-weight: 900 ;
 	border-style: solid;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -95,12 +95,7 @@ header nav ul li{
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
-}   
-.btn_wsp:hover{
-    text-decoration: none;
-    color: #0df053;
-    background: white;
-}
+}  
 footer{
     background-color: #f0aa40d3 ;
     border-style: ridge;
@@ -161,6 +156,7 @@ footer{
 }
 
 /* --- Recetas --- */
+
 .cuerpoTarjeta{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -272,3 +268,55 @@ footer{
     font-style: italic;
     font-weight:bolder;
 }
+
+/* --- Inicio de Responsive --- */
+
+/* --- Responsive - Celular ---*/
+
+/*
+@media screen and (min-width: 320px) and (max-width: 768px){
+    body{    
+        width: 100%;
+        height: 100%;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 10%;
+        height: 10%;
+    }
+    }
+
+    /* --- Index --- /
+    
+    .cuadro{ 
+        width: 80%;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .carousel {
+        height: 10%;
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transform: translateX(1%);
+    }
+    /* --- Recetas --- /
+    
+    .cuerpoTarjeta{ 
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .recetasDos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+     /*--- Responsive - Tablet --- */
