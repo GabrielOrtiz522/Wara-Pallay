@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@300&family=Work+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ol {
+  list-style: none; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #f0aa40d3;
+  border-style: double;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+.nav-item {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px; }
+
+.btn_wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100; }
+
+footer {
+  background-color: #f0aa40d3;
+  border-style: ridge;
+  border-color: #ffb004;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 1%; }
+
+/* --- Index --- */
+.titulosWara {
+  border-style: solid;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  padding: 1%; }
+
+.cuadro {
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%; }
+
+.cuadroTexto h2 {
+  font-weight: 900; }
+
+.cuadroTexto {
+  padding: 1%;
+  margin-bottom: 5%;
+  width: 90%;
+  border-style: solid;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 20px;
+  text-indent: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #ced4dac5;
+  line-height: 40px; }
+
+.carousel {
+  height: 100%;
+  width: 60%;
+  margin-top: 5%;
+  transform: translateX(35%); }
+
+.redesSociales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 2%; }
+
+.facebook {
+  margin-right: 3%; }
+
+/* --- Recetas --- */
+.cuerpoTarjeta {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row: auto auto auto;
+  margin: 3%; }
+
+.tarjeta {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  margin: 1%;
+  border-style: solid;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 30px;
+  background-color: #ced4dac5;
+  font-size: 20px;
+  width: 90%; }
+
+.pagination {
+  display: flex;
+  justify-content: center; }
+
+.recetasDos {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  place-content: center; }
+
+/* --- Contacto ---*/
+.mapa {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: end;
+  line-height: 30px;
+  font-size: 27px;
+  margin: 2%; }
+
+.mapaDos {
+  margin-left: 10%; }
+
+.mapa p {
+  border-style: solid;
+  border-color: black;
+  padding: 2%;
+  margin-left: 20%;
+  background-color: #ced4dac5; }
+
+.tituloContacto {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  padding: 1%;
+  border-style: solid;
+  border-color: black; }
+
+.subtituloContacto {
+  display: flex;
+  margin-top: 1%;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 900; }
+
+.tablaDeContacto {
+  display: grid;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  justify-content: center; }
+
+.empresaNombre {
+  margin-bottom: 1%; }
+
+.primerNombre {
+  margin-bottom: 1%; }
+
+.correoTelefono {
+  margin-bottom: 1%; }
+
+.direccion {
+  margin-bottom: 1%; }
+
+.enviar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+
+/* --- Nuestros Productos --- */
+.table {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder; }
+
+/* --- Inicio de Responsive --- */
+/* --- Responsive - Celular ---*/
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%; }
+  header nav ul {
+    display: flex;
+    flex-direction: column; }
+  .logo {
+    width: 10%;
+    height: 10%; }
+  /* --- Index --- */
+  .cuadro {
+    width: 80%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-left: 10%;
+    margin-top: 5%; }
+  .carousel {
+    height: 10%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transform: translateX(1%); }
+  /* --- Recetas --- */
+  .cuerpoTarjeta {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; }
+  /* --- Recetas - Pagina 02 --- */
+  .recetasDos {
+    display: flex;
+    flex-direction: column; } }
+
+/*--- Responsive - Tablet --- */
+@media screen and (min-width: 769px) and (max-width: 1020px) {
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  body {
+    width: 100%;
+    height: 100%; }
+  .logo {
+    width: 10%;
+    height: 10%; }
+  /* --- Index --- */
+  .cuadro {
+    width: 80%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-left: 10%;
+    margin-top: 5%; }
+  .carousel {
+    height: 10%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transform: translateX(1%); }
+  /* --- Recetas --- */
+  .cuerpoTarjeta {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; }
+  /* --- Recetas - Pagina 02 --- */
+  .recetasDos {
+    display: flex;
+    flex-direction: column; } }
+
+/* --- Fin del Responsive --- */
