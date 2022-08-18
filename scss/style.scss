@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@300&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Ubuntu&display=swap');
+
+/* --- Variables --- */
+
+$color-primario: #f0aa40d3 ;
+$color-secundario: #ced4dac5 ;
+$color-texto: black ;
+
+$tipografia-general: Arimo ; /* font-family: 'Arimo', sans-serif; */
+$tipografia-alternativa: Ubuntu ; /* font-family: 'Ubuntu', sans-serif; */
+
 *{
     margin:0;
     padding:0;
@@ -26,10 +36,11 @@ header{
     flex-direction: column;
     text-align: center;
     width: 100%;
-    background-color: #f0aa40d3 ;
+    background-color: $color-primario ;
     border-style: double;
     margin-top: 1%;
     margin-bottom: 1% ;
+    font-family: $tipografia-general ;
 }
 .nav-item{
     background-color: white;
@@ -53,9 +64,8 @@ header{
     z-index: 100;
 }  
 footer{
-    background-color: #f0aa40d3 ;
-    border-style: ridge;
-    border-color: rgb(255, 176, 4);
+    background-color: $color-primario ;
+    border-style: solid;
     text-align: center;
     margin-top: auto;
     margin-bottom: 1%;
@@ -71,6 +81,8 @@ footer{
     margin-right: 5%;
     margin-bottom: 2%;
     padding: 1%;
+    font-family: $tipografia-general;
+    font-weight: 900;
 }
 .cuadro{
     margin: 3%;
@@ -86,11 +98,10 @@ footer{
     margin-bottom: 5%;
     width: 90%;
     border-style: solid;
-    font-style: italic;
     font-weight:bolder;
     font-size: 20px;
     text-indent: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     color: black;
     background-color: #ced4dac5;
     line-height: 40px;
@@ -125,12 +136,12 @@ footer{
     flex-direction: column;
     margin: 1%;
     border-style: solid;
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
     text-align: center;
     line-height: 30px;
-    background-color: #ced4dac5;
+    background-color: $color-secundario;
     font-size: 20px;
     width: 90%;
 }
@@ -150,7 +161,7 @@ footer{
 .mapa{
     display: grid;
     grid-template-columns: 50% 50%;
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
     text-align: end;
@@ -166,12 +177,12 @@ footer{
     border-color: black;
     padding: 2%;
     margin-left: 20%;
-    background-color: #ced4dac5;
+    background-color:$color-secundario;
 }
 .tituloContacto{
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
     margin-top: 5%;
@@ -186,7 +197,7 @@ footer{
     display: flex;
     margin-top: 1%;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:900;
 }
@@ -196,7 +207,7 @@ footer{
     margin-right: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-family: 'Roboto', sans-serif;
+    font-family: &$tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
     justify-content: center;
