@@ -33,13 +33,13 @@ header {
   border-style: double;
   margin-top: 1%;
   margin-bottom: 1%;
-  font-family: Arimo; }
-
-.nav-item {
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px; }
+  font-family: Arimo;
+  font-weight: bold; }
+  header .nav-item {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px; }
 
 .btn_wsp {
   position: fixed;
@@ -58,6 +58,7 @@ header {
 
 footer {
   background-color: #f0aa40d3;
+  font-family: Arimo;
   border-style: solid;
   text-align: center;
   margin-top: auto;
@@ -81,22 +82,20 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%; }
-
-.cuadroTexto h2 {
-  font-weight: 900; }
-
-.cuadroTexto {
-  padding: 1%;
-  margin-bottom: 5%;
-  width: 90%;
-  border-style: solid;
-  font-weight: bolder;
-  font-size: 20px;
-  text-indent: 20px;
-  font-family: Ubuntu;
-  color: black;
-  background-color: #ced4dac5;
-  line-height: 40px; }
+  .cuadro .cuadroTexto h2 {
+    font-weight: 900; }
+  .cuadro .cuadroTexto {
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-style: solid;
+    font-weight: bolder;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: Ubuntu;
+    color: black;
+    background-color: #ced4dac5;
+    line-height: 40px; }
 
 .carousel {
   height: 100%;
@@ -219,7 +218,7 @@ footer {
 
 /* --- Nuestros Productos --- */
 .table {
-  font-family: 'Roboto', sans-serif;
+  font-family: Ubuntu;
   font-style: italic;
   font-weight: bolder; }
 

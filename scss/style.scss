@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Ubuntu&display=swap');
 
-/* --- Variables --- */
-
-$color-primario: #f0aa40d3 ;
-$color-secundario: #ced4dac5 ;
-$color-texto: black ;
-
-$tipografia-general: Arimo ; /* font-family: 'Arimo', sans-serif; */
-$tipografia-alternativa: Ubuntu ; /* font-family: 'Ubuntu', sans-serif; */
+@import "variables.scss";
 
 *{
     margin:0;
@@ -41,12 +34,13 @@ header{
     margin-top: 1%;
     margin-bottom: 1% ;
     font-family: $tipografia-general ;
-}
-.nav-item{
-    background-color: white;
-    border-style: solid;
-    border-color:black;
-    border-radius: 10px;
+    font-weight: bold;
+    .nav-item{
+        background-color: white;
+        border-style: solid;
+        border-color:black;
+        border-radius: 10px;
+    }
 }
 .btn_wsp{
     position: fixed;
@@ -65,6 +59,7 @@ header{
 }  
 footer{
     background-color: $color-primario ;
+    font-family: $tipografia-general;
     border-style: solid;
     text-align: center;
     margin-top: auto;
@@ -89,22 +84,22 @@ footer{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-}
-.cuadroTexto h2{
-    font-weight: 900 ;
-}
-.cuadroTexto{
-    padding: 1%;
-    margin-bottom: 5%;
-    width: 90%;
-    border-style: solid;
-    font-weight:bolder;
-    font-size: 20px;
-    text-indent: 20px;
-    font-family: $tipografia-alternativa;
-    color: black;
-    background-color: #ced4dac5;
-    line-height: 40px;
+    .cuadroTexto h2{
+        font-weight: 900 ;
+    }
+    .cuadroTexto{
+        padding: 1%;
+        margin-bottom: 5%;
+        width: 90%;
+        border-style: solid;
+        font-weight:bolder;
+        font-size: 20px;
+        text-indent: 20px;
+        font-family: $tipografia-alternativa;
+        color: black;
+        background-color: #ced4dac5;
+        line-height: 40px;
+    }
 }
 .carousel {
     height: 100%;
@@ -232,7 +227,7 @@ footer{
 
 /* --- Nuestros Productos --- */
 .table{
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
 }
