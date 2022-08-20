@@ -202,7 +202,7 @@ footer{
     margin-right: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-family: &$tipografia-alternativa;
+    font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
     justify-content: center;
@@ -226,12 +226,47 @@ footer{
 }
 
 /* --- Nuestros Productos --- */
-
+.subtituloEspecias{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    font-family: $tipografia-alternativa;
+    border: solid black;
+    background-color: $color-secundario;
+    padding: 1%;
+    margin-left: 5% ;
+    margin-right: 5%;
+        h2{
+            text-align: center;
+            font-weight: 900;
+        }
+            h3{
+                text-indent: 20px;
+                line-height: 35px;
+            }
+                img{
+                    align-self: center;
+                }   
+}
+.productosEspeciasTubo{
+    border-style: solid;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    padding: 1%;
+    font-family: $tipografia-alternativa;
+    font-weight: 900;
+    
+}
 .table{
     font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
 }
+
 
 /* --- Inicio de Responsive --- */
 
