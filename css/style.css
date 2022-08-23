@@ -150,18 +150,10 @@ footer {
 }
 
 .redesSociales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
-
-.facebook {
-  margin-right: 3%;
+  display: grid;
+  grid-template-columns: 5% 5%;
+  margin: 1%;
+  place-content: center;
 }
 
 /* --- Recetas --- */
@@ -398,6 +390,18 @@ footer {
     width: 10%;
     height: 10%;
   }
+  .redesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   /* --- Index --- */
   .cuadro {
     width: 80%;
@@ -490,6 +494,18 @@ footer {
     margin-bottom: 10%;
     -webkit-transform: translateX(1%);
             transform: translateX(1%);
+  }
+  .redesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   /* --- Recetas --- */
   .cuerpoTarjeta {

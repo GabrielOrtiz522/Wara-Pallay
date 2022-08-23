@@ -121,13 +121,10 @@ footer{
     transform: translateX(35%);
 }
 .redesSociales{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
-.facebook{
-    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 5% 5%;
+    margin: 1%;
+    place-content: center;    
 }
 
 /* --- Recetas --- */
@@ -312,6 +309,12 @@ footer{
         width: 10%;
         height: 10%;
     }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     /* --- Index --- */
     
     .cuadro{ 
@@ -330,6 +333,7 @@ footer{
         margin-bottom: 10%;
         transform: translateX(1%);
     }
+
 /* --- Recetas --- */
     
     .cuerpoTarjeta{ 
@@ -382,6 +386,12 @@ footer{
         margin-bottom: 10%;
         transform: translateX(1%);
     }
+    .redesSociales{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+    }
+
 /* --- Recetas --- */
     
     .cuerpoTarjeta{ 
