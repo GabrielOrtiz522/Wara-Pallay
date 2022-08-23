@@ -50,7 +50,7 @@ header{
         -webkit-transition-property: transform;
         transition-property: transform;
       }
-      .nav-item:hover, .hvr-grow:focus, .hvr-grow:active {
+      .nav-item:hover, .nav-item:focus, .nav-item:active {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
       }

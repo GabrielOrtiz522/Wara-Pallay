@@ -69,7 +69,7 @@ header .nav-item {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
-header .nav-item:hover, header .hvr-grow:focus, header .hvr-grow:active {
+header .nav-item:hover, header .nav-item:focus, header .nav-item:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
