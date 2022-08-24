@@ -185,18 +185,7 @@ footer{
     background-color:$color-secundario;
 }
 .tituloContacto{
-    display: flex;
-    justify-content: center;
-    font-family: $tipografia-alternativa;
-    font-style: italic;
-    font-weight:bolder;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1%;
-    padding: 1%;
-    border-style: solid;
-    border-color: black;
+    @extend .titulosWara
 }
 .subtituloContacto{
     display: flex;
@@ -259,17 +248,7 @@ footer{
                 }   
 }
 .productosEspeciasTubo{
-    border-style: solid;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-    padding: 1%;
-    font-family: $tipografia-alternativa;
-    font-weight: 900;
-    
+    @extend .titulosWara;
 }
 .table{
     font-family: $tipografia-alternativa;

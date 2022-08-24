@@ -101,7 +101,7 @@ footer {
 }
 
 /* --- Index --- */
-.titulosWara {
+.titulosWara, .productosEspeciasTubo, .tituloContacto {
   border-style: solid;
   text-align: center;
   display: -webkit-box;
@@ -226,25 +226,6 @@ footer {
   background-color: rgba(206, 212, 218, 0.7725490196);
 }
 
-.tituloContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-weight: bolder;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 1%;
-  padding: 1%;
-  border-style: solid;
-  border-color: black;
-}
-
 .subtituloContacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,23 +310,6 @@ footer {
 .subtituloEspecias img {
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.productosEspeciasTubo {
-  border-style: solid;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 2%;
-  padding: 1%;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 900;
 }
 
 .table {
