@@ -31,7 +31,7 @@ header{
     flex-direction: column;
     text-align: center;
     width: 100%;
-    background-color: $color-primario ;
+    background-color: map-get($color, principal ) ;
     border-style: double;
     margin-top: 1%;
     margin-bottom: 1% ;
@@ -73,7 +73,7 @@ header{
     z-index: 100;
 }  
 footer{
-    background-color: $color-primario ;
+    background-color: map-get($color,principal ) ;
     font-family: $tipografia-general;
     border-style: solid;
     text-align: center;
@@ -105,7 +105,7 @@ footer{
         text-indent: 20px;
         font-family: $tipografia-alternativa;
         color: black;
-        background-color: #ced4dac5;
+        background-color: map-get($color,cuadros);
         line-height: 40px;
     }
 }
