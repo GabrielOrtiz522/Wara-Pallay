@@ -102,14 +102,13 @@ footer {
 
 /* --- Index --- */
 .titulosWara, .productosEspeciasTubo, .tituloContacto {
-  border-style: solid;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-style: solid;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 2%;
@@ -157,6 +156,13 @@ footer {
 }
 
 /* --- Recetas --- */
+.cuerpoTarjeta {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 3%;
+}
+
 .tarjeta {
   display: -webkit-box;
   display: -ms-flexbox;

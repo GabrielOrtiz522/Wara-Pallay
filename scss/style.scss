@@ -2,6 +2,8 @@
 
 @import "variables.scss";
 
+@import "mixins.scss";
+
 *{
     margin:0;
     padding:0;
@@ -81,14 +83,7 @@ footer{
 /* --- Index --- */
 
 .titulosWara{
-    border-style: solid;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-    padding: 1%;
+    @include bordeTitulos;
     font-family: $tipografia-general;
     font-weight: 700;
 }
