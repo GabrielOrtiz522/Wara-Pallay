@@ -130,10 +130,7 @@ footer{
 /* --- Recetas --- */
 
 .cuerpoTarjeta{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-row: auto auto auto;
-    margin: 3%;
+    @include grid-cards;
 }
 .tarjeta{
     display: flex;
