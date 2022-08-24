@@ -97,7 +97,7 @@ footer {
   border-style: solid;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 /* --- Index --- */
@@ -151,7 +151,8 @@ footer {
 .redesSociales {
   display: grid;
   grid-template-columns: 5% 5%;
-  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   place-content: center;
 }
 
