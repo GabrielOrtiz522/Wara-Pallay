@@ -90,7 +90,7 @@ footer{
     margin-bottom: 2%;
     padding: 1%;
     font-family: $tipografia-general;
-    font-weight: 900;
+    font-weight: 700;
 }
 .cuadro{
     margin: 3%;
@@ -185,7 +185,9 @@ footer{
     background-color:$color-secundario;
 }
 .tituloContacto{
-    @extend .titulosWara
+    @extend .titulosWara;
+    font-style: italic;
+    margin-top: 5% ;
 }
 .subtituloContacto{
     display: flex;
@@ -249,6 +251,7 @@ footer{
 }
 .productosEspeciasTubo{
     @extend .titulosWara;
+
 }
 .table{
     font-family: $tipografia-alternativa;
