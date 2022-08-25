@@ -220,6 +220,7 @@ footer{
 }
 
 /* --- Nuestros Productos --- */
+
 .subtituloEspecias{
     display: flex;
     flex-direction: column;
@@ -256,8 +257,7 @@ footer{
 
 .nuestrosClientes{
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     margin:3%;
     justify-content: center;
     font-family: $tipografia-alternativa;
@@ -266,6 +266,7 @@ footer{
             font-weight: 900 ;
         }
 }
+
 /* --- Inicio de Responsive --- */
 
 /* --- Responsive - Celular ---*/
@@ -288,9 +289,11 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-top: 8%;
+        margin-bottom: 8%;
     }
 
-    /* --- Index --- */
+/* --- Index --- */
     
     .cuadro{ 
         width: 80%;
@@ -302,11 +305,7 @@ footer{
         margin-top: 5%;
     }
     .carousel {
-        height: 10%;
-        width: 80%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        transform: translateX(1%);
+        display: none;
     }
 
 /* --- Recetas --- */
@@ -314,7 +313,7 @@ footer{
     .cuerpoTarjeta{ 
         display: flex;
         flex-direction: column;
-        margin-left: 10%;
+        align-items: center;
     }
 
 /* --- Recetas - Pagina 02 --- */
@@ -324,6 +323,16 @@ footer{
         flex-direction: column;
     }
 }
+
+/* --- Nuestros Clientes --- */
+
+    .nuestrosClientes{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+    }
+
+/* --- Contacto --- */
 
  /*--- Responsive - Tablet --- */
 
@@ -365,6 +374,8 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            margin-top: 5%;
+            margin-bottom: 5%;
     }
 
 /* --- Recetas --- */
@@ -373,6 +384,7 @@ footer{
         display: flex;
         flex-direction: column;
         margin-left: 10%;
+        align-items: center;
     }
 
 /* --- Recetas - Pagina 02 --- */
@@ -381,5 +393,46 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+/* --- Nuestros Clientes --- */
+
+    .nuestrosClientes{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
 }
+
+@media screen and (min-width:1021px) and (max-width:1300px){
+
+/* --- Nuestros Clientes --- */
+
+    .nuestrosClientes{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+/* --- Recetas --- */
+
+    .cuerpoTarjeta{ 
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+}
+@media screen and (min-width:1301px){
+
+/* --- Nuestros Clientes --- */
+
+    .nuestrosClientes{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+}
+
 /* --- Fin del Responsive --- */
