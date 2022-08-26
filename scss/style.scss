@@ -158,13 +158,12 @@ footer{
 
 .mapa{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
-    text-align: end;
     line-height: 30px;
-    font-size: 27px;
+    font-size: 30px;
     margin: 2%;
 }
 .mapaDos{
@@ -322,7 +321,6 @@ footer{
         display: flex;
         flex-direction: column;
     }
-}
 
 /* --- Nuestros Clientes --- */
 
@@ -333,6 +331,22 @@ footer{
     }
 
 /* --- Contacto --- */
+
+    .mapa{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tituloContacto{
+        display: none;
+    }
+    .subtituloContacto{
+        display:none;
+    }
+    .tablaDeContacto{
+        display: none;
+    }
+}
 
  /*--- Responsive - Tablet --- */
 
@@ -401,6 +415,23 @@ footer{
         grid-template-columns: auto auto;
         justify-content: space-evenly;
     }
+
+/* --- Contacto --- */
+
+    .mapa{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tituloContacto{
+        display: none;
+    }
+    .subtituloContacto{
+        display:none;
+    }
+    .tablaDeContacto{
+        display: none;
+    }
 }
 
 @media screen and (min-width:1021px) and (max-width:1300px){
@@ -433,6 +464,15 @@ footer{
         justify-content: center;
         justify-content: space-evenly;
     }
+    .mapa{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-family: $tipografia-alternativa;
+        font-style: italic;
+        font-weight:bolder;
+        line-height: 30px;
+        font-size: 27px;
+        margin: 2%;
+    }
 }
-
 /* --- Fin del Responsive --- */

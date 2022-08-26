@@ -203,13 +203,12 @@ footer {
 /* --- Contacto ---*/
 .mapa {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-weight: bolder;
-  text-align: end;
   line-height: 30px;
-  font-size: 27px;
+  font-size: 30px;
   margin: 2%;
 }
 
@@ -412,16 +411,36 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /* --- Nuestros Clientes --- */
+  .nuestrosClientes {
+    display: grid;
+    grid-template-columns: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /* --- Contacto --- */
+  .mapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tituloContacto {
+    display: none;
+  }
+  .subtituloContacto {
+    display: none;
+  }
+  .tablaDeContacto {
+    display: none;
+  }
 }
-/* --- Nuestros Clientes --- */
-.nuestrosClientes {
-  display: grid;
-  grid-template-columns: auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-/* --- Contacto --- */
 /*--- Responsive - Tablet --- */
 @media screen and (min-width: 769px) and (max-width: 1020px) {
   header nav ul {
@@ -516,6 +535,28 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  /* --- Contacto --- */
+  .mapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tituloContacto {
+    display: none;
+  }
+  .subtituloContacto {
+    display: none;
+  }
+  .tablaDeContacto {
+    display: none;
+  }
 }
 @media screen and (min-width: 1021px) and (max-width: 1300px) {
   /* --- Nuestros Clientes --- */
@@ -552,6 +593,16 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .mapa {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 30px;
+    font-size: 27px;
+    margin: 2%;
   }
 }
 /* --- Fin del Responsive --- *//*# sourceMappingURL=style.css.map */
