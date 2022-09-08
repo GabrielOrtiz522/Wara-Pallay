@@ -243,12 +243,15 @@ footer{
 }
 .productosEspeciasTubo{
     @extend .titulosWara;
-
 }
 .table{
     font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
+}
+.icon-image{
+    display: flex;
+    justify-content: center;
 }
 
 /* --- Nuestros Productos --- */
