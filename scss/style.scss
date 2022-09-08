@@ -164,16 +164,16 @@ footer{
     line-height: 30px;
     font-size: 30px;
     margin: 2%;
+     p{
+        border-style: solid;
+        border-color: black;
+        padding: 2%;
+        margin-left: 20%;
+        background-color:$color-secundario;
+    }
 }
 .mapaDos{
     margin-left: 10%;
-}
-.mapa p{
-    border-style: solid;
-    border-color: black;
-    padding: 2%;
-    margin-left: 20%;
-    background-color:$color-secundario;
 }
 .tituloContacto{
     @extend .titulosWara;
@@ -190,10 +190,10 @@ footer{
 }
 .tablaDeContacto{
     display: grid;
-    margin-left: 20%;
-    margin-right: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
+    margin-left: 21%;
+    margin-right: 21%;
     font-family: $tipografia-alternativa;
     font-style: italic;
     font-weight:bolder;
@@ -271,7 +271,7 @@ footer{
 
 
 @media screen and (max-width: 768px){
-    body{    
+    body{
         width: 100%;
         height: 100%;
     }
@@ -332,9 +332,10 @@ footer{
 /* --- Contacto --- */
 
     .mapa{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
     }
     .tituloContacto{
         display: none;
@@ -418,9 +419,10 @@ footer{
 /* --- Contacto --- */
 
     .mapa{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: auto;
+        justify-content: center;
     }
     .tituloContacto{
         display: none;
@@ -451,7 +453,31 @@ footer{
         flex-direction: column;
         margin-left: 10%;
     }
+    
+    .tituloContacto{
+        display: none;
+    }
+    .subtituloContacto{
+        display:none;
+    }
+    .tablaDeContacto{
+        display: none;
+    }
 
+/* --- Contacto --- */
+
+    .mapa{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+    }
+
+/*--- Redes ---*/
+
+    .redesSociales{
+        justify-content: space-evenly;
+        margin: 5%;
+    }
 }
 @media screen and (min-width:1301px){
 

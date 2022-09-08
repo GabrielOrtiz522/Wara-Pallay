@@ -205,17 +205,16 @@ footer {
   font-size: 30px;
   margin: 2%;
 }
-
-.mapaDos {
-  margin-left: 10%;
-}
-
 .mapa p {
   border-style: solid;
   border-color: black;
   padding: 2%;
   margin-left: 20%;
   background-color: rgba(206, 212, 218, 0.7725490196);
+}
+
+.mapaDos {
+  margin-left: 10%;
 }
 
 .tituloContacto {
@@ -238,10 +237,10 @@ footer {
 
 .tablaDeContacto {
   display: grid;
-  margin-left: 20%;
-  margin-right: 20%;
   padding-top: 1%;
   padding-bottom: 1%;
+  margin-left: 21%;
+  margin-right: 21%;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-weight: bolder;
@@ -414,16 +413,12 @@ footer {
   }
   /* --- Contacto --- */
   .mapa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tituloContacto {
     display: none;
@@ -531,16 +526,12 @@ footer {
   }
   /* --- Contacto --- */
   .mapa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tituloContacto {
     display: none;
@@ -574,6 +565,30 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 10%;
+  }
+  .tituloContacto {
+    display: none;
+  }
+  .subtituloContacto {
+    display: none;
+  }
+  .tablaDeContacto {
+    display: none;
+  }
+  /* --- Contacto --- */
+  .mapa {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*--- Redes ---*/
+  .redesSociales {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 5%;
   }
 }
 @media screen and (min-width: 1301px) {
